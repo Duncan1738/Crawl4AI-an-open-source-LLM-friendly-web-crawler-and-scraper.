@@ -10,7 +10,7 @@ Crawl4AI is an open-source, lightweight web crawler and content scraper designed
 -  Detects keywords useful for LLM training or fine-tuning
 -  Removes JavaScript, CSS, and HTML noise
 -  Friendly to modern web pages with dynamic content
-- 📦 Simple to use and extend for multi-page crawling
+-  Simple to use and extend for multi-page crawling
 
 ---
 
