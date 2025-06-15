@@ -1,4 +1,4 @@
-# 🌐 Crawl4AI: LLM-Friendly Web Crawler & Scraper
+# Crawl4AI: LLM-Friendly Web Crawler & Scraper
 
 Crawl4AI is an open-source, lightweight web crawler and content scraper designed specifically for language model (LLM) applications. It helps extract clean, structured text from web pages and highlight relevant AI/ML concepts such as "transformer", "chatbot", or "machine learning".
 
