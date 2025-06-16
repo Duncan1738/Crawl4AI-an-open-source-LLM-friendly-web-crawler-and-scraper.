@@ -65,5 +65,5 @@ Data collection for fine-tuning transformers
 
 Search engine and content indexing
 
-📝 License
+
 MIT License © 2025 Duncan Kibet
