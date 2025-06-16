@@ -39,7 +39,7 @@ def crawl_and_extract(url, keywords=None):
     return text, None
 
 
-🔍 Example
+ Example
 url = "https://en.wikipedia.org/wiki/Artificial_intelligence"
 keywords = ["machine learning", "transformer", "chatbot"]
 text, found = crawl_and_extract(url, keywords)
