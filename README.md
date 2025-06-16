@@ -19,7 +19,7 @@ Crawl4AI is an open-source, lightweight web crawler and content scraper designed
 ```bash
 pip install requests beautifulsoup4 fake-useragent
 
-🧪 Usage
+ Usage
 
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
