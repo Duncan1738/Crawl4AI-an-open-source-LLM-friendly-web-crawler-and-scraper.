@@ -47,7 +47,7 @@ text, found = crawl_and_extract(url, keywords)
 print("Found Keywords:", found)
 print("Preview:", text[:1000])
 
-📊 Output
+ Output
 
 A cleaned version of webpage text
 
