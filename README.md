@@ -55,7 +55,7 @@ Boolean indicators of keyword presence
 
 Optional preview display for human inspection
 
-📁 Use Cases
+Use Cases
 
 Building LLM training datasets
 
