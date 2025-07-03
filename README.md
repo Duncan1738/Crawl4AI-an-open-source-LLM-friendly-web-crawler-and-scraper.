@@ -19,7 +19,30 @@ Crawl4AI is an open-source, lightweight web crawler and content scraper designed
 
 **Usage**
 ---
-<pre> ```python from bs4 import BeautifulSoup from fake_useragent import UserAgent import requests, re def crawl_and_extract(url, keywords=None): ua = UserAgent() headers = {'User-Agent': ua.random} response = requests.get(url, headers=headers, timeout=10) soup = BeautifulSoup(response.content, 'html.parser') for tag in soup(['script', 'style']): tag.decompose() text = re.sub(r'\s+', ' ', soup.get_text()).strip() if keywords: found = {kw: kw in text.lower() for kw in keywords} return text, found return text, None # Example url = "https://en.wikipedia.org/wiki/Artificial_intelligence" keywords = ["machine_learning", "transformer", "chatbot"] text, found = crawl_and_extract(url, keywords) print("Found Keywords:", found) print("Preview:", text[:1000]) ``` </pre>
+```python
+from bs4 import BeautifulSoup
+from fake_useragent import UserAgent
+import requests, re
+
+def crawl_and_extract(url, keywords=None):
+    ua = UserAgent()
+    headers = {'User-Agent': ua.random}
+    response = requests.get(url, headers=headers, timeout=10)
+    soup = BeautifulSoup(response.content, 'html.parser')
+    
+    # Remove script and style tags
+    for tag in soup(['script', 'style']):
+        tag.decompose()
+    
+    # Clean and normalize text
+    text = re.sub(r'\s+', ' ', soup.get_text()).strip()
+    
+    # Keyword detection (optional)
+    if keywords:
+        found = {kw: kw in text.lower() for kw in keywords}
+        return text, found
+
+    return text, None
 ---
 
  Example
