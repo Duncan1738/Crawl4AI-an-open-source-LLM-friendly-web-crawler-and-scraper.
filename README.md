@@ -40,33 +40,34 @@ def crawl_and_extract(url, keywords=None):
         return text, found
 
     return text, None
----
 
-***Example***
+# Example
 url = "https://en.wikipedia.org/wiki/Artificial_intelligence"
 keywords = ["machine learning", "transformer", "chatbot"]
 text, found = crawl_and_extract(url, keywords)
 
 print("Found Keywords:", found)
 print("Preview:", text[:1000])
+```
+---
 
- Output
+### Output
 
-A cleaned version of webpage text
+- A cleaned version of webpage text
 
-Boolean indicators of keyword presence
+- Boolean indicators of keyword presence
 
-Optional preview display for human inspection
+- Optional preview display for human inspection
 
-Use Cases
+### Use Cases
 
-Building LLM training datasets
+- Building LLM training datasets
 
-Scraping public knowledge for AI assistants
+- Scraping public knowledge for AI assistants
 
-Data collection for fine-tuning transformers
+- Data collection for fine-tuning transformers
 
-Search engine and content indexing
+- Search engine and content indexing
 
 
-MIT License © 2025 Duncan Kibet
+MIT License 
