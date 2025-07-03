@@ -12,13 +12,10 @@ Crawl4AI is an open-source, lightweight web crawler and content scraper designed
 -  Friendly to modern web pages with dynamic content
 -  Simple to use and extend for multi-page crawling
 
----
-
 ## Installation
 - pip install requests beautifulsoup4 fake-useragent
-
-**Usage**
 ---
+**Usage**
 ```python
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
@@ -45,7 +42,7 @@ def crawl_and_extract(url, keywords=None):
     return text, None
 ---
 
- Example
+***Example***
 url = "https://en.wikipedia.org/wiki/Artificial_intelligence"
 keywords = ["machine learning", "transformer", "chatbot"]
 text, found = crawl_and_extract(url, keywords)
