@@ -18,8 +18,9 @@ Crawl4AI is an open-source, lightweight web crawler and content scraper designed
 - pip install requests beautifulsoup4 fake-useragent
 
 **Usage**
-- from bs4 import BeautifulSoup
-- from fake_useragent import UserAgent
+---
+from bs4 import BeautifulSoup
+from fake_useragent import UserAgent
 import requests, re
 def crawl_and_extract(url, keywords=None):
     ua = UserAgent()
@@ -33,7 +34,7 @@ def crawl_and_extract(url, keywords=None):
         found = {kw: kw in text.lower() for kw in keywords}
         return text, found
     return text, None
-
+===
 
  Example
 url = "https://en.wikipedia.org/wiki/Artificial_intelligence"
