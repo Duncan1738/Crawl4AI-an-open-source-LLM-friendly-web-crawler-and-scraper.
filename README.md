@@ -34,7 +34,7 @@ def crawl_and_extract(url, keywords=None):
         found = {kw: kw in text.lower() for kw in keywords}
         return text, found
     return text, None
-===
+---
 
  Example
 url = "https://en.wikipedia.org/wiki/Artificial_intelligence"
