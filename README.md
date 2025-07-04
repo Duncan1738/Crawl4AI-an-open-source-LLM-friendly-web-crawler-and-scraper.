@@ -69,5 +69,5 @@ print("Preview:", text[:1000])
 
 - Search engine and content indexing
 
-
+---
 MIT License 
